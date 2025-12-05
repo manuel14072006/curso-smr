@@ -1,5 +1,4 @@
 
-
 while True:
     nombre = input("pon tu Nombre y Apellidos: ")
     edad = input("escribe tu edad: ")
