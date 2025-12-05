@@ -34,6 +34,7 @@ while True:
         print("nickname incorrecto")
 
     
-    continuar = input("¿ validar más datos? (s/n): ")
+    continuar = input("¿validar mas datos? (s/n): ")
     if continuar.lower() != "s":
         break
+    
