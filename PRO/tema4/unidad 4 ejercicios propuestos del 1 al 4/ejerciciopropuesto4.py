@@ -1,4 +1,4 @@
-# Ejercicio propuesto 4 (versión muy básica)
+
 
 while True:
     nombre = input("pon tu Nombre y Apellidos: ")
@@ -12,7 +12,7 @@ while True:
         if partes[0][0].isupper() and partes[1][0].isupper() and partes[2][0].isupper():
             print("Nombre y Apellidos correctos")
         else:
-            print("Nombre y Apellidos incorrectos")
+            print("Nombre y Apellidos incorrectos deben tener mayuscula")
     else:
         print("tenes que escribir  3 palabras")
 
@@ -35,6 +35,6 @@ while True:
         print("nickname incorrecto")
 
     
-    continuar = input("¿queres validar más datos? (s/n): ")
+    continuar = input("¿ validar más datos? (s/n): ")
     if continuar.lower() != "s":
         break
