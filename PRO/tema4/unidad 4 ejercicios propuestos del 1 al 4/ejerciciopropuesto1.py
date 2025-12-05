@@ -1,4 +1,4 @@
-cadena=input("introduce una cadena")
+cadena=input("introduce una cadena: ")
 
 print("los caracteres de la cadena son: ")
 
