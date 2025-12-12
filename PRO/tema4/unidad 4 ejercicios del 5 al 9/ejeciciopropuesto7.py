@@ -17,7 +17,7 @@ for nombre, edad in alumnos:
   if edad >= 18:
     print(f"{nombre} ({edad}) años")
 
-alumnos_ordenados = sorted(alumnos, key=lambda x: x[1], reverse=True)
+alumnos_ordenados = sorted(alumnos, key=lambda x: x[1], reverse=True) #en esta parte use ayuda de la IA
 
 print ("los dos alumnos mas mayores: ")
 for nombre, edad in alumnos_ordenados[:2]:
