@@ -8,4 +8,4 @@ numero=int(input("introduce un numero de mes: "))
 if 1 <= numero <=12:
     print(f"el mes {meses[numero - 1]} tiene {dias[numero - 1]} dias.")
 else:
-    print("unumero de mes invalido.")
+    print("numero de mes invalido.")
