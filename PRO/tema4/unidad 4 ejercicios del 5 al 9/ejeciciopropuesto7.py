@@ -21,4 +21,4 @@ alumnos_ordenados = sorted(alumnos, key=lambda x: x[1], reverse=True) #en esta p
 
 print ("los dos alumnos mas mayores: ")
 for nombre, edad in alumnos_ordenados[:2]:
-  print(f"{nombre} ({edad} años)")
+  print(f"{nombre} ({edad} años)") 
