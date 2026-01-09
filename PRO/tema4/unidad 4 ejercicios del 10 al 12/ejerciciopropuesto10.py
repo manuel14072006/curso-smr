@@ -9,5 +9,6 @@ for letra in x:
     else:
         minus.append(letra)
 
+
 resultado = tuple(mayus + minus) 
 print(resultado)
