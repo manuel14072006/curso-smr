@@ -1,17 +1,13 @@
 x = ('C', 'h', 'R', 'm', 'A', 's', 'M', 'o', 'T', 'y', 'c')
 
-resultado = x [:-1] + ('d','e')
-
 mayus = []
 minus = []
 
 for letra in x:
     if letra.isupper():
-        mayus.append()
+        mayus.append(letra)
     else:
-        minus.append()
+        minus.append(letra)
 
-
-print("Tupla original:", x)
-
-print("Tupla resultado:", resultado)
+resultado = tuple(mayus + minus) 
+print(resultado)
