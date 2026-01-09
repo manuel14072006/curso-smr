@@ -1,0 +1,8 @@
+animales = ('gato', 'perro', 'pez', 'conejo', 'hamster')
+
+lista_animales = [animal.strip() for animal in animales.split(",")]
+
+resultado = tuple((animal, len(animal)) for animal in lista_animales)
+
+print("Tupla original:", animales)
+print("Tupla resultado:", resultado)
