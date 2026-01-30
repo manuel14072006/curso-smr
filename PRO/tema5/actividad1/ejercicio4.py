@@ -18,15 +18,24 @@ else:
     print(f"Nuevo saldo: {saldo}€")
     '''
 
+
 try:
     retiro = float(input("¿Cuánto quieres retirar? "))
-    if retiro > saldo:
-        print("No tienes suficiente saldo")
-    elif retiro < 0:
-        print("No puedes retirar cantidades negativas")
-    else:
-        saldo -= retiro
-        print(f"Retirado: {retiro}€")
-        print(f"Nuevo saldo: {saldo}€")
+
+   
+    assert retiro >= 0, "No puedes retirar cantidades negativas"
+    assert retiro <= saldo, "No tienes suficiente saldo"
+
+    saldo -= retiro
+    print(f"Retirado: {retiro}€")
+    print(f"Nuevo saldo: {saldo}€")
+
 except ValueError:
-    print("Error: Debes introducir una cantidad válida")
+    print("Error: Debes introducir un número válido")
+
+except AssertionError as error:
+    print("Error:", error)
+
+
+
+    
