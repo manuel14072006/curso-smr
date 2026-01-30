@@ -11,6 +11,6 @@ try:
     print(f"Tu amigo es: {amigos[indice]}")
 
 except ValueError:
-    print("Error: Debes introducir un número válido")   
+    print("tenes que introducir un número válido")   
 except IndexError:
-    print("Error: Índice fuera de rango")   
+    print("Índice fuera de rango")   
