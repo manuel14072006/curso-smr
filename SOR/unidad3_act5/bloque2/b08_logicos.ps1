@@ -1,21 +1,7 @@
-# Comparación de cadenas de texto
+# Mostrar solo números del 1 al 30 que sean múltiplos de 3 y menores de 20
 
-$usuario = "CarlosGomez"
-
-# Comparación exacta
-if ($usuario -eq "CarlosGomez") {
-    Write-Output "El nombre coincide exactamente con CarlosGomez."
-}
-
-# Contiene subcadena
-if ($usuario -like "*Gomez*") {
-    Write-Output "El nombre contiene 'Gomez'."
-}
-
-# Comienza o termina por un texto específico
-if ($usuario -like "Carlos*") {
-    Write-Output "El nombre comienza por 'Carlos'."
-}
-if ($usuario -like "*Gomez") {
-    Write-Output "El nombre termina por 'Gomez'."
+for ($i = 1; $i -le 30; $i++) {
+    if (($i % 3 -eq 0) -and ($i -lt 20)) {
+        Write-Output $i
+    }
 }

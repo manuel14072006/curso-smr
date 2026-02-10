@@ -1,15 +1,11 @@
-# Simulación de cálculo de recursos de disco
+# Bucle del 1 al 20 indicando si el número es menor, igual o mayor que 10
 
-# Declarar variables
-$espacioTotal = 500 # en GB
-$espacioUsado = 275 # en GB
-
-# Calcular espacio libre y porcentaje de uso
-$espacioLibre = $espacioTotal - $espacioUsado
-$porcentajeUso = ($espacioUsado / $espacioTotal) * 100
-
-# Mostrar resultados
-Write-Output "Espacio total: $espacioTotal GB"
-Write-Output "Espacio usado: $espacioUsado GB"
-Write-Output "Espacio libre: $espacioLibre GB"
-Write-Output ("Porcentaje de uso: {0:N2}%" -f $porcentajeUso)
+for ($i = 1; $i -le 20; $i++) {
+    if ($i -lt 10) {
+        Write-Output "$i es menor que 10"
+    } elseif ($i -eq 10) {
+        Write-Output "$i es igual a 10"
+    } else {
+        Write-Output "$i es mayor que 10"
+    }
+}
